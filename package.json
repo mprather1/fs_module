@@ -1,6 +1,6 @@
 {
   "name": "fs_module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fs module + mock-fs",
   "main": "build/app.js",
   "repository": "https://github.com/mprather1/fs_module",

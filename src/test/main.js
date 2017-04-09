@@ -22,7 +22,6 @@ let fsm = new fsModule()
 describe ('fs module', () => {
   it ('should read a file', (done) => {
     fsm.read('/dir/file.json').then((data) => {
-      console.log(data)
       expect(data).to.be.json
       expect(data.length).to.equal(5)
       expect(data[0]).to.have.property('name')
