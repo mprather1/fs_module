@@ -13,7 +13,19 @@
     
 ### read a file
   
-    fsm.read('file.json')
+    fsm.read('file.json').then((data) => {
+      logger.info(data)
+    }).catch((err) => {
+      logger.error(err)
+    })
+    
+## write
+
+    fsm.write('read.json', 'write.json').then(() => {
+      logger.info('success')
+    }).catch((err) => {
+      logger.error(err)
+    })
     
 ### test
 
